@@ -30,6 +30,64 @@ styles/
 Dieses Repo kann als normaler npm‑/yarn‑Package installiert werden. Es besteht auch aus einer reinen
 SCSS‑Bibliothek; die erzeugte CSS‑Datei liegt nach dem Build unter `dist/styles.css`.
 
+### Schritt-für-Schritt Einbindung (öffentliche Repository)
+
+1. **Abhängigkeit hinzufügen**
+
+   ```bash
+   cd /pfad/zum/webprojekt
+   npm install git+https://github.com/flamebuckler/styles.git
+   # oder mit yarn:
+   # yarn add git+https://github.com/flamebuckler/styles.git
+   ```
+
+   Der Code landet in `node_modules/styles`.
+
+2. **SCSS importieren**
+   - In der zentralen SCSS‑Datei (`main.scss`, `app.scss` etc.):
+     ```scss
+     @use 'styles/src/main' as *; // importiert alle Module
+     // Du kannst alternativ auch nur Teilmodule laden:
+     // @use "styles/src/components/forms" as *;
+     // @use "styles/src/tokens/colors" as *;
+     ```
+   - Falls deine Toolchain noch `@import` nutzt, funktioniert auch
+     `@import "styles/src/main";`.
+
+3. **Build ausführen**
+   Lass deinen SCSS‑Compiler (Webpack, Vite, Sass‑CLI, Jekyll etc.) laufen. Die
+   Styles werden automatisch zusammengestelt.
+
+4. **Optional: Fertiges CSS verwenden**
+   Wenn du nicht kompilierst, kannst du die vorgefertigte Datei einsetzen:
+   - `node_modules/styles/dist/styles.css` nach `assets/` kopieren, oder
+   - das Artefakt aus dem GitHub‑Action‑Workflow herunterladen.
+     Binde sie in HTML via `<link rel="stylesheet" href="/pfad/styles.css">`.
+
+5. **Projektspezifische Anpassungen**
+   Schreibe eigene Regeln _nach_ dem Import, um zentrale Styles zu überschreiben.
+
+### Alternative: Git-Submodule
+
+1. Submodule hinzufügen:
+
+   ```bash
+   git submodule add https://github.com/flamebuckler/styles.git styles
+   git submodule update --init --recursive
+   ```
+
+2. In SCSS exportieren:
+
+   ```scss
+   @use '../styles/src/main' as *; // Pfad ggf. anpassen
+   ```
+
+3. Neuerungen übernehmen:
+   ```bash
+   cd styles && git pull
+   git add styles && git commit -m "update styles submodule"
+   ```
+
 ### Beispiel `package.json` im styles‑Repo
 
 ```json
