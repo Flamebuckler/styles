@@ -1,0 +1,6 @@
+/* zentrales Layout-Element für begrenzte Breite */
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: var(--space-lg) var(--space-md);
+}

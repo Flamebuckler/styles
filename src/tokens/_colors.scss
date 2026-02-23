@@ -1,0 +1,20 @@
+/* Farbvariablen für dunkle Layouts – thematisch strukturiert */
+:root {
+	/* --- Standard‑Dark‑Theme (einsetzbar als default) --- */
+	--color-dark-background: #121212;
+	--color-dark-foreground: #e0e0e0;
+	--color-dark-accent: #bb86fc;
+	--color-dark-link: #8ab4f8;
+
+	/* --- Zusatzpalette „Flamebuckler“ --- */
+	--color-flame-bg: #0f0f10;
+	--color-flame-card: #262626;
+	--color-flame-text: #e8e8e8;
+	--color-flame-muted: #888888;
+	--color-flame-muted-bg: #171717;
+}
+
+/* Hinweis: in einer bestimmten Theme‑Klasse lassen sich die Werte einfach
+   umschalten, z. B.
+   .theme-flame { --color-bg: var(--color-flame-bg); … }
+*/

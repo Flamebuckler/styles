@@ -1,0 +1,52 @@
+/* Header-, Main- und Footer-Styles
+   Klassen sollten beschreibend und konfliktarm bleiben (z.B. BEM-ähnlich
+   benennen: `.site-header__logo`, `.site-header--dark` usw.).
+*/
+header,
+.site-header {
+	text-align: center;
+	padding: 2rem 1rem;
+	border-bottom: 1px solid #333;
+}
+
+header h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+header p,
+.tagline {
+	font-size: 1rem;
+	color: #aaa;
+}
+
+main {
+	max-width: 800px;
+	margin: 2rem auto;
+	padding: 0 1rem;
+}
+
+footer {
+	text-align: center;
+	padding: 1rem;
+	border-top: 1px solid #333;
+	font-size: 0.8rem;
+	color: #777;
+}
+
+.logo {
+	font-weight: 700;
+	font-size: 24px;
+	color: var(--accent);
+}
+
+.tagline {
+	margin-top: 4px;
+	font-size: 14px;
+}
+
+.hint {
+	color: var(--muted);
+	font-size: 13px;
+	margin-top: 8px;
+}

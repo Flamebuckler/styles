@@ -1,0 +1,25 @@
+/* Grundlegende Typografie und Font-Fallbacks */
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+	font-size: 40px;
+	margin: 8px 0 0;
+	font-weight: 800;
+}
+
+.tagline {
+	color: var(--muted);
+	margin-top: 4px;
+	font-size: 14px;
+}
+
+.hint {
+	color: var(--muted);
+	font-size: 13px;
+	margin-top: 8px;
+}

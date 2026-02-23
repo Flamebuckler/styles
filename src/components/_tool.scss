@@ -1,0 +1,29 @@
+/* Stil für Link-Kacheln ("tools") */
+.tool {
+	display: block; /* anchors sind standardmäßig inline */
+	padding: 1rem;
+	margin-bottom: 1rem;
+	background-color: #1e1e1e;
+	border-radius: 6px;
+	transition: background-color 0.3s;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--link-color);
+}
+
+.tool:hover {
+	background-color: #2c2c2c;
+}
+
+.tool .tool-name {
+	font-size: 1.2rem;
+	font-weight: 600;
+	display: block;
+	margin-bottom: 0.3rem;
+}
+
+.tool p {
+	margin-top: 0.5rem;
+	font-size: 0.95rem;
+	color: #ccc;
+}

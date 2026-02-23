@@ -1,0 +1,11 @@
+/* Abstandswerte als CSS‑Variablen (Spacing‑Token)
+   bitte prinzipiell nur diese verwenden statt harter Pixelwerte */
+:root {
+	--space-xs: 4px;
+	--space-2xs: 12px; /* kleiner Zwischenwert, z.B. für Gaps */
+	--space-sm: 8px;
+	--space-md: 16px;
+	--space-lg: 24px;
+	--space-xl: 32px;
+	/* Weitere Größen (xxl etc.) nach Bedarf hinzufügen. */
+}

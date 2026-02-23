@@ -1,0 +1,45 @@
+/* Hilfsklassen */
+.visually-hidden {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap;
+}
+
+/* utility class for hiding elements */
+.hidden {
+	display: none !important;
+}
+
+/* Text utilities */
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+
+/* Margin helpers (nur ein paar Beispiele, lasse sich erweitern) */
+.mt-1 {
+	margin-top: var(--space-xs);
+}
+.mt-2 {
+	margin-top: var(--space-sm);
+}
+.mt-3 {
+	margin-top: var(--space-md);
+}
+.mb-1 {
+	margin-bottom: var(--space-xs);
+}
+.mb-2 {
+	margin-bottom: var(--space-sm);
+}
+.mb-3 {
+	margin-bottom: var(--space-md);
+}

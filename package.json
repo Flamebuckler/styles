@@ -1,0 +1,12 @@
+{
+	"name": "styles",
+	"version": "0.1.0",
+	"description": "Gemeinsame Basisstyles für mehrere Web‑Projekte",
+	"main": "dist/styles.css",
+	"scripts": {
+		"build": "sass src/main.scss dist/styles.css --no-source-map --style=compressed"
+	},
+	"devDependencies": {
+		"sass": "^1.70.0"
+	}
+}
