@@ -1,6 +1,6 @@
 /* Kachel-Komponenten und Ergebnisanzeigen */
 .card {
-	background: var(--card);
+	background: var(--color-card);
 	border-radius: 8px;
 	padding: var(--space-lg);
 }
@@ -16,7 +16,7 @@
 }
 
 .empty {
-	color: var(--muted);
+	color: var(--color-muted);
 	padding: var(--space-md) 0;
 	text-align: center;
 }

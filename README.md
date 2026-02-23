@@ -9,7 +9,8 @@ styles/
 ├─ src/
 │  ├─ tokens/
 │  │  ├─ _colors.scss      ← CSS-Variablen für verschiedene Farbschemata (Farben, Akkzente)
-│  │  └─ _spacing.scss     ← einheitliche Abstände/Spacing-Werte
+│  │  ├─ _spacing.scss     ← einheitliche Abstände/Spacing-Werte
+│  │  └─ _fonts.scss       ← Schriftfamilien und font‑Token
 │  ├─ base/
 │  │  ├─ _reset.scss       ← Reset, Grundtypen, Box-Sizing
 │  │  ├─ _typography.scss  ← Schriftfamilien, Überschriften, Textelemente
