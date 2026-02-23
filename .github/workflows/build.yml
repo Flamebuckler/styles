@@ -2,10 +2,10 @@ name: Build CSS
 
 on:
   push:
-    paths:
-      - 'src/**'
-      - 'package.json'
-      - '.github/workflows/**'
+    # paths:
+    #   - 'src/**'
+    #   - 'package.json'
+    #   - '.github/workflows/**'
 
 jobs:
   build:
