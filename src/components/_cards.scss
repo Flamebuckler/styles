@@ -15,11 +15,18 @@
 	margin-top: var(--space-lg);
 }
 
+.card-title {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: var(--color-foreground);
+}
+
 .empty {
 	color: var(--color-muted);
 	padding: var(--space-md) 0;
 	text-align: center;
 }
+
 @media (max-width: 620px) {
 	.search-card {
 		padding: 12px;
