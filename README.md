@@ -69,12 +69,11 @@ durchzusetzen.
   empfiehlt sich BEM oder ein ähnliches System, um Überschneidungen zu vermeiden.
 - Utility‑Klassen (z. B. `.text-center`, `.mt-2`) werden im `utilities/_helpers.scss` gesammelt.
 
-1. Paket installieren (lokal oder über npm/GitHub Packages):
+1. Paket installieren (lokal oder per GitHub‑URL):
 
    ```bash
+   # aus dem Repository installieren – keine Veröffentlichung in einer Registry nötig
    npm install git+https://github.com/flamebuckler/styles.git
-   # oder nach Veröffentlichung:
-   npm install @me/styles
    ```
 
 2. In deinem SCSS/Buildsystem einbinden:
@@ -111,5 +110,6 @@ Dies erleichtert zukünftige Wartung und macht es möglich, beide Farbpaletten n
 
 Beim Push in das Repo generiert eine GitHub‑Action automatisch die kompilierte
 `dist/styles.css` und hängt sie als Artefakt an (siehe `.github/workflows/build.yml`).
-So steht stets eine frische CSS‑Version zur Verfügung, ohne dass Du lokal kompilieren
-musst.
+Die Action verwendet mittlerweile `actions/upload-artifact@v4` – ältere Versionen
+wurden deaktiviert. So steht stets eine frische CSS‑Version zur Verfügung, ohne dass Du
+lokal kompilieren musst.
