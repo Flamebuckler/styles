@@ -119,7 +119,7 @@ durchzusetzen.
 > Hinweis: Im Quellcode nutzen wir `@use 'path' as *;` statt des veralteten `@import`. Das passt
 > zur aktuellen Sass‑Richtlinie und vermeidet Warnungen beim Build.
 
-- Farben: `--color-…` (z. B. `--color-dark-background`, `--color-flame-muted`)
+- Farben: `--color-…` (z. B. `--color-background`, `--color-card`, `--color-muted`)
 - Abstände: `--space-…` (z. B. `--space-md`, `--space-2xs` für 12 px); verwende diese Tokens im gesamten Projekt anstelle von
   harten Pixelwerten – Beispiel: `padding: var(--space-lg);` statt `padding: 24px;`)
 - Weitere Kategorien (z‑Index, Radius etc.) folgen demselben Schema.
@@ -150,7 +150,7 @@ durchzusetzen.
 
 Der oben gezeigte Katalog stammt aus zwei konkreten Projekten. Beim zweiten Stylesheet etwa wurden durch die Aufteilung folgende Modulzuordnungen erzeugt:
 
-- **Farben und Tokens** → `tokens/_colors.scss` (alle Variablen, z. B. `--color-dark-background`, `--color-flame-card`, `--color-flame-text` usw.)
+- **Farben und Tokens** → `tokens/_colors.scss` (alle Variablen, z. B. `--color-background`, `--color-card`, `--color-muted` usw.)
 - **Typografie & Grundregeln** → `base/_typography.scss` (Schrift‑Stacks, Überschriften, `.tagline`, `.hint`)
 - **Layout/Container** → `base/_container.scss` plus Erweiterungen von Header/Footer in `components/_layout.scss`
 - **Cards/Formulare/Tabellen** → neue Komponenten (`_cards.scss`, `_forms.scss`, `_tables.scss`)
@@ -162,7 +162,7 @@ Prozess:
 - Teste das Ergebnis visuell gegen die ursprüngliche Seite.
 - Inhalte, die wirklich nur in einem Projekt gebraucht werden, dürfen im Projekt‑Repo bleiben; dann werden sie **nach** dem Import der zentralen Styles geladen.
 
-Dies erleichtert zukünftige Wartung und macht es möglich, beide Farbpaletten nebeneinander zu verwenden oder eine gemein‑same Basis zu starten und bei Bedarf pro Projekt abzuweichen.
+Dies erleichtert zukünftige Wartung und macht es möglich, das Theme konsistent zu pflegen und bei Bedarf projekt‑spezifisch anzupassen.
 
 ## Automatisierung
 
