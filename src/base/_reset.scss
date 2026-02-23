@@ -8,8 +8,8 @@
 html,
 body {
 	height: 100%;
-	background-color: var(--background-color);
-	color: var(--foreground-color);
+	background-color: var(--color-background);
+	color: var(--color-foreground);
 	font-family: var(--font-family); /* definiert im tokens/_fonts.scss */
 	line-height: 1.6;
 }
