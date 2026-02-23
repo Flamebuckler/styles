@@ -1,6 +1,6 @@
 # styles
 
-Dieses Repository enthält Basisstyles für mehrere Webprojekte. Die Dateien sind modular aufgebaut (`tokens`, `base`, `components`), damit einzelne Projekte nur die benötigten Teile importieren können.
+Dieses Repository enthält Basisstyles für meine eigenen Webprojekte. Es ist nicht für die breite Öffentlichkeit gedacht; der Zugriff erfolgt über mein privates GitHub‑Repo. Die Dateien sind modular aufgebaut (`tokens`, `base`, `components`), damit einzelne Projekte nur die benötigten Teile importieren können.
 
 ## Beispielstruktur
 
@@ -72,7 +72,7 @@ durchzusetzen.
 1. Paket installieren (lokal oder per GitHub‑URL):
 
    ```bash
-   # aus dem Repository installieren – keine Veröffentlichung in einer Registry nötig
+   # aus meinem privaten Repository installieren – keine Veröffentlichung in einer Registry nötig
    npm install git+https://github.com/flamebuckler/styles.git
    ```
 
