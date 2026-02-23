@@ -1,8 +1,8 @@
-# styles
+# Styles
 
-Dieses Repository enthält Basisstyles für meine eigenen Webprojekte. Es ist nicht für die breite Öffentlichkeit gedacht; der Zugriff erfolgt über mein privates GitHub‑Repo. Die Dateien sind modular aufgebaut (`tokens`, `base`, `components`), damit einzelne Projekte nur die benötigten Teile importieren können.
+Dieses Repository enthält Basisstyles für mehrere Webprojekte. Die Dateien sind modular aufgebaut (`tokens`, `base`, `components`), damit einzelne Projekte nur die benötigten Teile importieren können.
 
-## Beispielstruktur
+## Struktur
 
 ```
 styles/
@@ -72,7 +72,7 @@ durchzusetzen.
 1. Paket installieren (lokal oder per GitHub‑URL):
 
    ```bash
-   # aus meinem privaten Repository installieren – keine Veröffentlichung in einer Registry nötig
+   # aus dem Repository installieren – keine Veröffentlichung in einer Registry nötig
    npm install git+https://github.com/flamebuckler/styles.git
    ```
 
@@ -110,6 +110,5 @@ Dies erleichtert zukünftige Wartung und macht es möglich, beide Farbpaletten n
 
 Beim Push in das Repo generiert eine GitHub‑Action automatisch die kompilierte
 `dist/styles.css` und hängt sie als Artefakt an (siehe `.github/workflows/build.yml`).
-Die Action verwendet mittlerweile `actions/upload-artifact@v4` – ältere Versionen
-wurden deaktiviert. So steht stets eine frische CSS‑Version zur Verfügung, ohne dass Du
+So steht stets eine frische CSS‑Version zur Verfügung, ohne dass Du
 lokal kompilieren musst.
