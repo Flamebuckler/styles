@@ -41,6 +41,7 @@ button {
 button:active {
 	transform: translateY(1px);
 }
+
 @media (max-width: 620px) {
 	.controls {
 		flex-direction: column;

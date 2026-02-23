@@ -13,8 +13,7 @@ header h1 {
 	margin-bottom: 0.5rem;
 }
 
-header p,
-.tagline {
+header p {
 	font-size: 1rem;
 	color: #aaa;
 }
@@ -36,15 +35,4 @@ footer {
 	font-weight: 700;
 	font-size: 24px;
 	color: var(--color-accent);
-}
-
-.tagline {
-	margin-top: 4px;
-	font-size: 14px;
-}
-
-.hint {
-	color: var(--color-muted);
-	font-size: 13px;
-	margin-top: 8px;
 }
