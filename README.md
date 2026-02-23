@@ -42,7 +42,7 @@ SCSS‑Bibliothek; die erzeugte CSS‑Datei liegt nach dem Build unter `dist/sty
 		"build": "sass src/main.scss dist/styles.css --no-source-map --style=compressed"
 	},
 	"devDependencies": {
-		"sass": "^1.70.0"
+		"sass": "^1.97.3"
 	}
 }
 ```
